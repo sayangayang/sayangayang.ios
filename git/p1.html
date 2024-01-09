@@ -1,0 +1,45 @@
+
+!<!DOCTYPE html>
+<html lang="en">
+<!-- 
+  Code Made By Deka Tutorial
+  Youtube: Deka Tutorial
+  Tiktok: @deka_tutorial
+  -->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    div {
+      width: 120px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+    }
+  </style>
+  <title>Just For You </title>
+</head>
+
+<body style="text-align: center">
+  <img src="g1H4.gif"/>
+  <h1>Sayang </h1>
+  <h2>Kita kayak dlu lagi ya ... ;)</h2>
+  <div>
+    <button onclick="mau()">Iya sayang</button>
+    <button onmouseover="gak(this)">Gk mau </button>
+  </div>
+  <script>
+    function mau() {
+      alert("Makasih sayangku :)");
+    }
+    function gak(ini) {
+      ini.style.position = "absolute";
+      ini.style.left = `${Math.floor(Math.random() * 90)}%`;
+      ini.style.top = `${Math.floor(Math.random() * 90)}%`;
+    }
+  </script>
+</body>
+
+</html>
